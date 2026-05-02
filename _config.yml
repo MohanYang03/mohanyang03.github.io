@@ -18,6 +18,14 @@ url                      : https://mohanyang03.github.io  # The base hostname & 
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "MohanYang03/mohanyang03.github.io"
 
+# Footer (copyright bar at bottom — edit text here instead of editing HTML)
+footer:
+  social_follow       : false    # true = show GitHub / RSS row above copyright
+  show_last_updated   : false    # true = show “Site last updated …” under powered-by line
+  show_sitemap        : true     # false = hide Sitemap link
+  # Privacy / analytics disclaimer (plain text). Leave empty or omit to hide.
+  analytics_notice    : ""
+
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html

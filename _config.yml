@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "dirt" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
+site_theme               : "neon" # "default", "air", "sunrise", "mint", "dirt", "contrast", "neon" (Minimal Mistakes neon skin: dark + magenta)
 title                    : "Mohan Yang"
 title_separator          : "-"
 name                     : &name "Mohan Yang"

@@ -1,0 +1,74 @@
+/* ==========================================================================
+   NEON SKIN (Minimal Mistakes) — light / default theme
+   Ported from https://github.com/mmistakes/minimal-mistakes/blob/master/_sass/minimal-mistakes/skins/_neon.scss
+   ========================================================================== */
+
+$neon-bg                    : #141010;
+$neon-text                  : #fff6fb;
+$neon-primary               : #f21368;
+$neon-border                : mix(#fff, $neon-bg, 20%);
+$neon-footer-bg             : mix($neon-primary, #000, 10%);
+$neon-code-bg               : mix(#000, $neon-bg, 15%);
+$neon-link-hover            : mix(#fff, $neon-primary, 25%);
+$neon-link-visited          : mix(#000, $neon-primary, 25%);
+$neon-masthead-hover        : mix(#000, $neon-text, 20%);
+$neon-muted                 : mix(#fff, $neon-text, 45%);
+$neon-code-text             : mix($neon-text, $neon-bg, 35%);
+
+$danger-color               : #ff5c5c;
+$info-color                 : $neon-primary;
+$notice-color               : $neon-muted;
+$success-color              : #00c918;
+$warning-color              : #fd8900;
+
+$border-radius              : 4px;
+$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.3);
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 70px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+:root {
+  --global-base-color                 : #{$neon-primary};
+  --global-bg-color                   : #{$neon-bg};
+  --global-footer-bg-color            : #{$neon-footer-bg};
+  --global-border-color               : #{$neon-border};
+  --global-dark-border-color          : #{$neon-border};
+  --global-code-background-color      : #{$neon-code-bg};
+  --global-code-text-color            : #{$neon-code-text};
+  --global-fig-caption-color          : #{$neon-muted};
+  --global-link-color                 : #{$neon-primary};
+  --global-link-color-hover           : #{$neon-link-hover};
+  --global-link-color-visited         : #{$neon-link-visited};
+  --global-masthead-link-color        : #{$neon-text};
+  --global-masthead-link-color-hover  : #{$neon-masthead-hover};
+  --global-text-color                 : #{$neon-text};
+  --global-text-color-light           : #{$neon-muted};
+  --global-thead-color                : #{$neon-border};
+}
+
+footer {
+  color: var(--global-text-color-light);
+}
+
+.page__footer-follow .social-icons i:not(.fa-rss-square),
+.page__footer-follow .social-icons .svg-inline--fa:not(.fa-rss-square) {
+  color: inherit;
+}
+
+.author__urls.social-icons i,
+.author__urls.social-icons .svg-inline--fa {
+  color: inherit;
+}
+
+.pagination--pager {
+  color: $neon-text;
+  background-color: $neon-primary;
+  border-color: transparent;
+
+  &:visited {
+    color: $neon-text;
+  }
+}

@@ -1,20 +1,14 @@
-# The following is the order of the links in the header of the website.
-#
-# Changing the order here will adjust the order and you can also add additional
-# links. Removing a link prevents it from showing in the header, but does not
-# prevent it from being included in the site.
-#
-# CV links to a PDF in /files/ (see README). Upload your CV as e.g. files/cv.pdf.
-
+# Order matches the reference site (CV → Research → Teaching → Presentation).
+# See https://github.com/liu-junhao/liu-junhao.github.io/blob/master/_data/navigation.yml
 main:
-  - title: "Publications"
-    url: /publications/
+  - title: "CV"
+    url: /files/cv.pdf
 
-  - title: "Presentations"
-    url: /presentation/
+  - title: "Research"
+    url: /publications/
 
   - title: "Teaching"
     url: /teaching/
 
-  - title: "CV"
-    url: /files/cv.pdf
+  - title: "Presentation"
+    url: /presentation/

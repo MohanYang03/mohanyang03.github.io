@@ -1,0 +1,65 @@
+/* ==========================================================================
+   NEON SKIN — alternate palette when theme toggle is “dark” (slightly deeper)
+   ========================================================================== */
+
+$neon-bg                    : #0a0909;
+$neon-text                  : #fff8fc;
+$neon-primary               : #ff4d8a;
+$neon-border                : mix(#fff, $neon-bg, 18%);
+$neon-footer-bg             : mix($neon-primary, #000, 8%);
+$neon-code-bg               : mix(#000, $neon-bg, 18%);
+$neon-link-hover            : mix(#fff, $neon-primary, 30%);
+$neon-link-visited          : mix(#000, $neon-primary, 30%);
+$neon-masthead-hover        : mix(#000, $neon-text, 15%);
+$neon-muted                 : mix(#fff, $neon-text, 42%);
+$neon-code-text             : mix($neon-text, $neon-bg, 38%);
+
+$danger-color               : #ff5c5c;
+$info-color                 : $neon-primary;
+$notice-color               : $neon-muted;
+$success-color              : #00c918;
+$warning-color              : #fd8900;
+
+$border-radius              : 4px;
+$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.35);
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 70px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+html[data-theme="dark"] {
+  --global-base-color                 : #{$neon-primary};
+  --global-bg-color                   : #{$neon-bg};
+  --global-footer-bg-color            : #{$neon-footer-bg};
+  --global-border-color               : #{$neon-border};
+  --global-dark-border-color          : #{$neon-border};
+  --global-code-background-color      : #{$neon-code-bg};
+  --global-code-text-color            : #{$neon-code-text};
+  --global-fig-caption-color          : #{$neon-muted};
+  --global-link-color                 : #{$neon-primary};
+  --global-link-color-hover           : #{$neon-link-hover};
+  --global-link-color-visited         : #{$neon-link-visited};
+  --global-masthead-link-color        : #{$neon-text};
+  --global-masthead-link-color-hover  : #{$neon-masthead-hover};
+  --global-text-color                 : #{$neon-text};
+  --global-text-color-light           : #{$neon-muted};
+  --global-thead-color                : #{$neon-border};
+}
+
+html[data-theme="dark"] {
+  footer {
+    color: var(--global-text-color-light);
+  }
+
+  .pagination--pager {
+    color: $neon-text;
+    background-color: $neon-primary;
+    border-color: transparent;
+
+    &:visited {
+      color: $neon-text;
+    }
+  }
+}

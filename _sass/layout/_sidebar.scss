@@ -17,11 +17,7 @@
     margin-top: 1em;
   }
 
-  /* Do not use position:fixed here (Academic Pages upstream does). Fixed positioning
-     removes the sidebar from normal flow; Susy still floats .page / .archive as if the
-     sidebar occupied the first two columns, so the main column starts at x=0 and draws
-     underneath the fixed sidebar (overlap). Stay in the floated grid; .sidebar.sticky +
-     utilities/_utilities.scss .sticky provides in-column scrolling behavior. */
+  /* No position:fixed — fixed sidebar overlaps the main float column; .sidebar.sticky uses in-flow sticky. */
 
   @include breakpoint($large) {
     @include span(2 of 12);

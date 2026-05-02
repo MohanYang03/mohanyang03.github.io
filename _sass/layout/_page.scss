@@ -5,7 +5,6 @@
 #main {
   @include container;
   @include clearfix;
-  display: flow-root;
   margin-top: 2em;
   padding-left: 1em;
   padding-right: 1em;
@@ -399,4 +398,22 @@
   margin-bottom: 10px;
   font-size: $type-size-6;
   text-transform: uppercase;
+}
+
+/*
+ * Fixed sidebar (≥ $sidebar-screen-min-width) is out of flow; offset main blocks by two
+ * columns so they align with Academic Pages / Minimal Mistakes behavior.
+ */
+@include breakpoint($large) {
+  @media screen and (min-width: $sidebar-screen-min-width) {
+    #main .sidebar ~ .page,
+    #main .sidebar ~ .archive {
+      @include pre(2 of 12);
+    }
+
+    /* Was pre(2.5); add two columns for fixed sidebar gutter */
+    #main .sidebar ~ .page__related {
+      @include pre(4.5 of 12);
+    }
+  }
 }

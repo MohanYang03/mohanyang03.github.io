@@ -17,7 +17,12 @@
     margin-top: 1em;
   }
 
-  /* No position:fixed — fixed sidebar overlaps the main float column; .sidebar.sticky uses in-flow sticky. */
+  @media screen and (min-width: $sidebar-screen-min-width) {
+    height: 100vh;
+    overflow-y: auto;
+    position: fixed;
+    padding-top: $masthead-height;
+  }
 
   @include breakpoint($large) {
     @include span(2 of 12);

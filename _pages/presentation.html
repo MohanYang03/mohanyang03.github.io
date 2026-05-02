@@ -1,0 +1,37 @@
+---
+layout: archive
+title: "Presentations"
+permalink: /presentation/
+author_profile: true
+redirect_from:
+  - /talks/
+---
+
+{% assign show_poster_section = false %}
+{% if site.data.posters %}
+  {% if site.data.posters.items.size > 0 %}
+    {% assign show_poster_section = true %}
+  {% endif %}
+{% endif %}
+
+{% if site.talkmap_link == true %}
+
+<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
+
+{% endif %}
+
+{% if show_poster_section %}
+  <h2 class="archive__subtitle">Posters</h2>
+  {% assign posters_sorted = site.data.posters.items | sort: 'date' | reverse %}
+  {% for poster in posters_sorted %}
+    {% include archive-single-poster.html poster=poster %}
+  {% endfor %}
+{% endif %}
+
+{% if show_poster_section and site.talks.size > 0 %}
+  <h2 class="archive__subtitle">Talks</h2>
+{% endif %}
+
+{% for post in site.talks reversed %}
+  {% include archive-single-talk.html %}
+{% endfor %}

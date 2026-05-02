@@ -1,0 +1,15 @@
+{% include base_path %}
+{% assign poster = include.poster %}
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    <h2 class="archive__item-title" itemprop="headline">
+      <a href="{{ base_path }}{{ poster.pdf }}" target="_blank" rel="noopener">{{ poster.title }}</a>
+    </h2>
+    {% if poster.date %}
+    <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {{ poster.date | date: '%B %d, %Y' }}</p>
+    {% endif %}
+    {% if poster.venue %}
+    <p class="archive__item-excerpt" itemprop="description">{{ poster.venue }}</p>
+    {% endif %}
+  </article>
+</div>

@@ -2,7 +2,7 @@
 title: "Evaluating the potential of acupuncture for Alzheimer’s disease treatment: A meta-analysis and systematic review of mouse model studies"
 collection: publications
 category: manuscripts
-permalink: /publication/Evaluating the potential of acupuncture for Alzheimer’s disease treatment: A meta-analysis and systematic review of mouse model studies
+permalink: /publication/meta-analysis
 excerpt: ''
 date: 2026-03-17
 venue: 'Translational Psychiatry'

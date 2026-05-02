@@ -1,4 +1,4 @@
-# Header order: CV → Research → Teaching → Presentation.
+# Header: CV → Research → Teaching → Presentation
 main:
   - title: "CV"
     url: /cv/

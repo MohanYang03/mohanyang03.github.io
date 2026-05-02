@@ -2,7 +2,7 @@
 permalink: /
 title: "Mohan Yang (杨墨涵)"
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
@@ -15,4 +15,3 @@ Recently, I have been working on:
 - Analyzing mouse behavior under CORT treatment using motion sequencing modeling (ARHMM)
 - RNA velocity modeling to infer latent cell time and model gene expression dynamics from scRNA-seq data
 - Meta-Analysis for evaluating the potential of electroacupuncture on Alzheimer’s Disease
-

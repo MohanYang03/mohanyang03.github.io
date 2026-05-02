@@ -1,0 +1,64 @@
+/* ==========================================================================
+   CUSTOM THEME — dark (header theme toggle)
+   ========================================================================== */
+
+$gray                       : #7a8288;
+$dark-gray                  : mix(#fff, $gray, 75%);
+$darker-gray                : mix(#fff, $gray, 55%);
+$light-gray                 : mix(#fff, $gray, 35%);
+$lighter-gray               : mix(#000, $gray, 30%);
+
+$background-color           : #2a252c;
+$border-color               : #5c545e;
+$body-text-muted            : #b5aeb8;
+$primary-color              : #c4b8c8;
+$info-color                 : #d4849a;
+
+$link-color                 : #e8a0b5;
+$link-color-hover           : mix(#fff, $link-color, 20%);
+$link-color-visited         : mix(#000, $info-color, 20%);
+$masthead-link-color        : #e8e4ea;
+$masthead-link-color-hover  : #f21368;
+
+$code-bg                    : mix(#fff, $background-color, 8%);
+$footer-bg                  : mix(#000, $background-color, 25%);
+
+$danger-color               : #ff8a8a;
+$notice-color               : #b5aeb8;
+$success-color              : #7ecf7e;
+$warning-color              : #ffc266;
+
+$border-radius              : 4px;
+$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.35);
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 70px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+html[data-theme="dark"] {
+  --global-base-color                 : #{$primary-color};
+  --global-bg-color                   : #{$background-color};
+  --global-footer-bg-color            : #{$footer-bg};
+  --global-border-color               : #{$border-color};
+  --global-dark-border-color          : mix(#fff, #{$border-color}, 12%);
+  --global-code-background-color      : #{$code-bg};
+  --global-code-text-color            : #{$dark-gray};
+  --global-fig-caption-color          : #{$body-text-muted};
+  --global-link-color                 : #{$link-color};
+  --global-link-color-hover           : #{$link-color-hover};
+  --global-link-color-visited         : #{$link-color-visited};
+  --global-masthead-link-color        : #{$masthead-link-color};
+  --global-masthead-link-color-hover  : #{$masthead-link-color-hover};
+  --global-text-color                 : #{$dark-gray};
+  --global-text-color-light           : #{$body-text-muted};
+  --global-thead-color                : #{$lighter-gray};
+  --global-toc-bg-color               : mix(#fff, #{$background-color}, 6%);
+}
+
+html[data-theme="dark"] {
+  footer {
+    color: var(--global-text-color-light);
+  }
+}

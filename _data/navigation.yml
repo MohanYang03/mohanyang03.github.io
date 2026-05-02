@@ -1,8 +1,7 @@
-# Order matches the reference site (CV → Research → Teaching → Presentation).
-# See https://github.com/liu-junhao/liu-junhao.github.io/blob/master/_data/navigation.yml
+# Header order: CV → Research → Teaching → Presentation.
 main:
   - title: "CV"
-    url: /files/cv.pdf
+    url: /cv/
 
   - title: "Research"
     url: /publications/

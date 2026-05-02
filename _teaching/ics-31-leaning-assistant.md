@@ -1,5 +1,5 @@
 ---
-title: "ICS 31 — Introduction to Programming (Learning Assistant)"
+title: "ICS 31 — Introduction to Programming"
 collection: teaching
 type: "Learning Assistant"
 permalink: /teaching/ics-31-introduction-to-programming/

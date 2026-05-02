@@ -8,11 +8,8 @@ redirect_from:
 ---
 
 
-Hi! My name is Mohan Yang, and I am currently a CS PhD Student at UCLA. Previously, I received my B.S. in Data Science from UCI, with a minor in bioinformatics. My research interests lies in computational biology and machine learning.
+Welcome to my page! My name is Mohan Yang (杨墨涵), and I am currently a PhD student in Computer Science at UCLA. Previously, I received my B.S. in Data Science from UCI, with a minor in bioinformatics.
 
-Recently, I have been working on:
+My research interests are in computational biology, machine learning, and statistical modeling, with a particular focus on learning latent temporal structure from biological and clinical data. I am interested in developing computational frameworks that capture complex dynamics from sparse and noisy observations and that identify meaningful, actionable signals across multiple scales, from cells to patients.
 
-- An early detection framework (Parametric Empirical Bayes) for Polycystic Ovary Syndrome using the All of Us Database
-- Analyzing mouse behavior under CORT treatment using motion sequencing modeling (ARHMM)
-- RNA velocity modeling to infer latent cell time and model gene expression dynamics from scRNA-seq data
-- Meta-Analysis for evaluating the potential of electroacupuncture on Alzheimer’s Disease
+My recent research includes generative modeling for RNA velocity, early detection of polycystic ovary syndrome from longitudinal EHR data, behavioral analysis in mouse models, and meta-analysis in translational neuroscience.

@@ -53,7 +53,11 @@ $small                      : 600px !default;
 $medium                     : 768px !default;
 $medium-wide                : 900px !default;
 $large                      : 925px !default;
-$x-large                    : 1280px !default;
+$x-large                    : 1400px !default;
+
+/* Max width of the centered content column (masthead, #main, footer). Wider than
+   the legacy 925px default so the layout uses more of the screen on desktops. */
+$site-container-max-width   : 1180px !default;
 
 /* ==========================================================================
    Grid
@@ -70,7 +74,7 @@ $susy: (
     math: fluid,
     output: float,
     gutter-position: after,
-    container: $large,
+    container: $site-container-max-width,
     global-box-sizing: border-box,
 );
 

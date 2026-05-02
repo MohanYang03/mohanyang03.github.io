@@ -3,6 +3,10 @@
 
 ![Academic Pages template example](images/themes/homepage-light.png "Academic Pages template example")
 
+# Adding your own content
+
+To add a **publication** (journal / conference / book), a **talk**, or a **poster**, follow [docs/adding-content.md](docs/adding-content.md).
+
 # Getting Started
 
 1. Register a GitHub account if you don't have one and confirm your e-mail (required!)

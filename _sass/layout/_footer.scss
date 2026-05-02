@@ -35,7 +35,7 @@
     padding: 0 1em 1.25em;
 
     @include breakpoint($x-large) {
-      max-width: $site-container-max-width;
+      max-width: $x-large;
     }
   }
 
@@ -58,7 +58,7 @@
 
 .page__footer-copyright {
   font-family: $global-font-family;
-  font-size: $type-size-7;
+  font-size: $type-size-8;
   line-height: 1.55;
   max-width: 52em;
 
@@ -78,7 +78,7 @@
 
 .page__footer-meta {
   margin-top: 0.85em;
-  font-size: $type-size-7;
+  font-size: $type-size-8;
 
   a {
     text-decoration: underline;
@@ -97,7 +97,7 @@
     padding-top: 5px;
     padding-bottom: 5px;
     font-family: $sans-serif-narrow;
-    font-size: $type-size-6;
+    font-size: $type-size-7;
     text-transform: uppercase;
   }
 

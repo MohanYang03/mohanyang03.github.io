@@ -1,14 +1,13 @@
 # Posters appear on the Presentations page under "Posters".
 # Put PDFs in files/posters/ and reference them below (served as /files/posters/...).
-# Newest first is applied by date; use ISO format (YYYY-MM-DD) for reliable sorting.
-items: []
-# Example (uncomment and edit when you add PDFs):
+# Sorting is by date (newest first) in the template; use ISO format (YYYY-MM-DD).
+items:
   - title: "Early Detection of Polycystic Ovary Syndrome Using All of Us Data"
     venue: "UCI UROP 2026"
     date: 2026-05-15
     pdf: /files/posters/PCOS-Poster.pdf
-  
-  - title: "Evaluating the potential of acupuncture for Alzheimer’s disease treatment: A meta-analysis and systematic review of mouse model studies"
+
+  - title: "Evaluating the potential of acupuncture for Alzheimer's disease treatment: A meta-analysis and systematic review of mouse model studies"
     venue: "UCI UROP 2025"
     date: 2025-05-15
     pdf: /files/posters/Meta-Analysis-Poster.pdf

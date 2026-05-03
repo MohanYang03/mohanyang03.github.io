@@ -7,7 +7,11 @@
 {% assign seo_url = seo_url | default: site.github.url %}
 
 {% if page.title %}
-  {% assign seo_title = page.title | append: " " | append: site.title_separator | append: " " | append: site.title %}
+  {% if page.title == site.title %}
+    {% assign seo_title = site.title %}
+  {% else %}
+    {% assign seo_title = page.title | append: " " | append: site.title_separator | append: " " | append: site.title %}
+  {% endif %}
 {% endif %}
 
 {% if seo_title %}
@@ -40,7 +44,7 @@
 {% endif %}
 
 <meta property="og:locale" content="{{ site.locale | default: "en" }}">
-<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:site_name" content="{{ site.og_site_name | default: site.title }}">
 <meta property="og:title" content="{{ page.title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}">
 
 {% if seo_url %}
@@ -99,6 +103,18 @@
 {% endif %}
 {% if paginator.next_page %}
   <link rel="next" href="{{ paginator.next_page_path | prepend: seo_url }}">
+{% endif %}
+
+{% if seo_url %}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": {{ seo_url | append: "/" | jsonify }},
+      "name": {{ site.title | jsonify }}{% if site.alternate_site_name %},
+      "alternateName": {{ site.alternate_site_name | jsonify }}{% endif %}
+    }
+  </script>
 {% endif %}
 
 {% if site.og_image %}

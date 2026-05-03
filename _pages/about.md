@@ -1,12 +1,13 @@
 ---
 permalink: /
-title: "About Me"
+title: "Mohan Yang"
 author_profile: true
 redirect_from:
   - /about/
   - /about.html
 ---
 
+## About Me
 
 Welcome to my page! My name is Mohan Yang (杨墨涵), and I am currently a PhD student in Computer Science at UCLA. Previously, I received my B.S. in Data Science from UCI, with a minor in bioinformatics.
 

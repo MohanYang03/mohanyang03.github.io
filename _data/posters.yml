@@ -2,6 +2,11 @@
 # Put PDFs in files/posters/ and reference them below (served as /files/posters/...).
 # Sorting is by date (newest first) in the template; use ISO format (YYYY-MM-DD).
 items:
+  - title: "Motion Sequencing Reveals Persistent Sex-Specific Behavioral Outcomes Following Chronic Corticosterone Exposure"
+    venue: "2026 Summer Conference on “Neural Circuits in Health and Disease”"
+    date: 2026-08-17
+    pdf: /files/posters/Moseq-Poster.pdf
+
   - title: "Early Detection of Polycystic Ovary Syndrome Using All of Us Data"
     venue: "UCI UROP 2026"
     date: 2026-05-15

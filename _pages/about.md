@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-My name is Mohan Yang (杨墨涵), and I am currently a PhD student in Computer Science at UCLA. Previously, I received my B.S. in Data Science from UCI, with a minor in bioinformatics.
+My name is Mohan Yang (杨墨涵), and I am currently a PhD student in Computer Science at UCLA, working in Professor Jason Ernst's lab. Previously, I received my B.S. in Data Science from UCI, with a minor in bioinformatics.
 
 ## Research Interests:
 

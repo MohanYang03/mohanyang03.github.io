@@ -1,0 +1,13 @@
+---
+layout: archive
+title: "Software"
+permalink: /software/
+author_profile: true
+---
+
+{% if site.data.software %}
+  {% assign software_sorted = site.data.software.items | sort: 'date' | reverse %}
+  {% for software in software_sorted %}
+    {% include archive-single-software.html software=software %}
+  {% endfor %}
+{% endif %}

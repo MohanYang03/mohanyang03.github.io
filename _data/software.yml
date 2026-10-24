@@ -1,0 +1,8 @@
+# Software appears on the Software page.
+# Sorting is by date (newest first) in the template; use ISO format (YYYY-MM-DD).
+items:
+  - title: "AutoExtract"
+    description: "Automatically extract numbers from charts in scientific papers, designed for meta-analysis."
+    url: https://hub.docker.com/r/yanghenry/autoextract
+    image: yanghenry/autoextract
+    date: 2026-10-23

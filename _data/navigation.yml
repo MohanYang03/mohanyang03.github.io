@@ -1,10 +1,13 @@
-# Header: CV → Research → Teaching → Presentation
+# Header: CV → Research → Software → Teaching → Presentation
 main:
   - title: "CV"
     url: /cv/
 
   - title: "Research"
     url: /publications/
+
+  - title: "Software"
+    url: /software/
 
   - title: "Teaching"
     url: /teaching/

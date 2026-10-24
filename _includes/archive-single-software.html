@@ -1,0 +1,19 @@
+{% include base_path %}
+{% assign software = include.software %}
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/SoftwareApplication">
+    <h2 class="archive__item-title" itemprop="name">
+      {% if software.url %}
+        <a href="{{ software.url }}" target="_blank" rel="noopener">{{ software.title }}</a>
+      {% else %}
+        {{ software.title }}
+      {% endif %}
+    </h2>
+    {% if software.image %}
+    <p class="page__meta"><i class="fab fa-docker" aria-hidden="true"></i> <code>{{ software.image }}</code></p>
+    {% endif %}
+    {% if software.description %}
+    <p class="archive__item-excerpt" itemprop="description">{{ software.description }}</p>
+    {% endif %}
+  </article>
+</div>

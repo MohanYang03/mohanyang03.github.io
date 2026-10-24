@@ -10,7 +10,7 @@
       {% endif %}
     </h2>
     {% if software.image %}
-    <p class="page__meta"><i class="fab fa-docker" aria-hidden="true"></i> <code>{{ software.image }}</code></p>
+    <p class="page__meta"><i class="fab fa-docker" aria-hidden="true"></i> <span class="software__image">{{ software.image }}</span></p>
     {% endif %}
     {% if software.description %}
     <p class="archive__item-excerpt" itemprop="description">{{ software.description }}</p>
